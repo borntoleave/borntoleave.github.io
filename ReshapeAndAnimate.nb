@@ -1,0 +1,74 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1786,         65]
+NotebookOptionsPosition[      1536,         51]
+NotebookOutlinePosition[      1890,         67]
+CellTagsIndexPosition[      1847,         64]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"im", "[", "name_", "]"}], ":=", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+     RowBox[{"NotebookDirectory", "[", "]"}], "<>", "name"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"rs", "[", "name_", "]"}], ":=", 
+   RowBox[{"ImageResize", "[", 
+    RowBox[{
+     RowBox[{"im", "[", "name", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"500", ",", "500"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"exp", "[", 
+    RowBox[{"fname_", ",", "series_", ",", "dur_"}], "]"}], ":=", 
+   RowBox[{"Export", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], "<>", "fname"}], ",", "series",
+      ",", "\"\<GIF\>\"", ",", 
+     RowBox[{"\"\<DisplayDurations\>\"", "\[Rule]", "dur"}]}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.672441495836927*^9, 3.672441529506831*^9}, {
+  3.672442611150839*^9, 3.6724426116765337`*^9}}]
+},
+WindowSize->{808, 655},
+WindowMargins->{{145, Automatic}, {27, Automatic}},
+FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 6, \
+2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 974, 29, 80, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
