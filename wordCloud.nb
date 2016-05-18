@@ -1,0 +1,361 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11807,        352]
+NotebookOptionsPosition[     11432,        334]
+NotebookOutlinePosition[     11786,        350]
+CellTagsIndexPosition[     11743,        347]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"hm", "=", 
+   RowBox[{"ColorNegate", "@", 
+    RowBox[{"Binarize", "@", 
+     RowBox[{"ImageResize", "[", 
+      RowBox[{
+       RowBox[{"Import", "[", 
+        RowBox[{
+         RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
+         "\"\<hammer.jpg\>\""}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"500", ",", "500"}], "}"}]}], "]"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.672591625251031*^9, 3.6725916843300753`*^9}, {
+   3.672591723478879*^9, 3.672591726557559*^9}, 3.672593421288859*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"skills", "=", 
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<C++\>\"", ",", "Italic"}], "]"}], "10"},
+       {
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<Mathematica\>\"", ",", "Italic"}], "]"}], "10"},
+       {
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<Matlab\>\"", ",", "Italic"}], "]"}], "9"},
+       {"\"\<Shell scripts\>\"", "6"},
+       {"\"\<JavaScript\>\"", "4"},
+       {"\"\<Gnuplot\>\"", "3"},
+       {"\"\<Python\>\"", "5"},
+       {"\"\<Maple\>\"", "5"},
+       {"\"\<CUDA\>\"", "7"},
+       {"\"\<LaTeX\>\"", "7"},
+       {"\"\<SQL\>\"", "5"},
+       {"\"\<Git\>\"", "6"},
+       {"\"\<Photography\>\"", "8"},
+       {"\"\<AutoCAD\>\"", "4"},
+       {"\"\<3D printer\>\"", "4"},
+       {"\"\<Machine shop\>\"", "5"},
+       {"\"\<Data Analysis\>\"", "8"},
+       {"\"\<Machine Learning\>\"", "6"},
+       {"\"\<Java\>\"", "4"},
+       {"\"\<HTML\>\"", "4"},
+       {"\"\<Digital Media\>\"", "6"},
+       {"\"\<Algorithm\>\"", "6"},
+       {"\"\<MPI\>\"", "5"},
+       {"\"\<Visualization\>\"", "7"}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+        "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[BoxForm`e$]]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"WordCloud", "[", 
+  RowBox[{"skills", ",", 
+   RowBox[{"WordSpacings", "\[Rule]", "3"}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "800"}]}], "]"}]}], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBmIQ/apikfLLmNeOWvNbdUH0P5nfqSD64Yy2DBBd596d
+C6J3sR4C0wkM/kUgOi9ToAxEi1r+aQbRPN84WkD0shN/OkB0jrNiF4iepqu1
+BkQLKZmBaW2RO1tAtNcBvX0gmsFF4jCI/uk14zSINpn04wKITv234zKItovJ
+ugOib7aV3QXRq+8cfgiiGxZWPQbRd1oVXoLofWHGYLrlaeVbEF3zro/xFZDe
+v+IQG4h+lNTMD6Irv7sKg+g4XQFjEM32dbs1iOZjm2QPomW2b3YG0c/6doHp
+VfI9niDaxO98AIgGAMqQqR0=
+  "]],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {InsetBox[
+     StyleBox["\<\"Mathematica\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.14736842105263157`],
+      FontWeight->Plain,
+      FontSlant->Italic,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.880722, 0.611041, 0.142051]], {0, 0}], InsetBox[
+     StyleBox["\<\"Data Analysis\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.1112781954887218],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.922526, 0.385626, 0.209179]], {0., -53.}], 
+    InsetBox[
+     StyleBox["\<\"Photography\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.1112781954887218],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.528488, 0.470624, 0.701351]], {14., 54.}], 
+    InsetBox[
+     StyleBox["\<\"Visualization\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.09323308270676692],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[1, 0.75, 0]], {0., 97.}], InsetBox[
+     StyleBox["\<\"Matlab\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.1293233082706767],
+      FontWeight->Plain,
+      FontSlant->Italic,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.560181, 0.691569, 0.194885]], {-11., -104.}], 
+    InsetBox[
+     StyleBox["\<\"Machine Learning\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.07518796992481203],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.40082222609352647`, 0.5220066643438841, 0.85]], {0., 135.}], InsetBox[
+     StyleBox["\<\"C++\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.14736842105263157`],
+      FontWeight->Plain,
+      FontSlant->Italic,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.368417, 0.506779, 0.709798]], {-92., -147.}], 
+    InsetBox[
+     StyleBox["\<\"Digital Media\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.07518796992481203],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.571589, 0.586483, 0.]], {83., -146.}], InsetBox[
+     StyleBox["\<\"Shell scripts\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.07518796992481203],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.9728288904374106, 0.621644452187053, 
+        0.07336199581899142]], {0., 170.}], InsetBox[
+     StyleBox["\<\"CUDA\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.09323308270676692],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.772079, 0.431554, 0.102387]], {151., -98.}], 
+    InsetBox[
+     StyleBox["\<\"LaTeX\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.09323308270676692],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.363898, 0.618501, 0.782349]], {54., -185.}], 
+    InsetBox[
+     StyleBox["\<\"Algorithm\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.07518796992481203],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.647624, 0.37816, 0.614037]], {-103., -191.}], 
+    InsetBox[
+     StyleBox["\<\"Machine shop\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.05714285714285714],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.736782672705901, 0.358, 0.5030266573755369]], {-11., 202.}], InsetBox[
+     StyleBox["\<\"Python\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.05714285714285714],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.5833680111493557, 0.4126186601628758, 
+        0.8290799721266107]], {-145., -89.}], InsetBox[
+     StyleBox["\<\"Maple\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.05714285714285714],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.28026441037696703`, 0.715, 0.4292089322474965]], {-176., 52.}], 
+    InsetBox[
+     StyleBox["\<\"JavaScript\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.039097744360902256`],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.5407932311309059, 0.715, 0.09762679674248334]], {174., 81.}], 
+    InsetBox[
+     StyleBox["\<\"AutoCAD\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.039097744360902256`],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.28240003484173815`, 0.6090799721266095, 
+        0.7538800418100857]], {-166., 90.}], InsetBox[
+     StyleBox["\<\"3D printer\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.039097744360902256`],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.8439466852489265, 0.3467106629502147, 
+        0.3309221912517893]], {205., 36.}], InsetBox[
+     StyleBox["\<\"SQL\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.05714285714285714],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.8996399512215667, 0.7463488834690629, 0.]], {-194., -40.}], 
+    InsetBox[
+     StyleBox["\<\"Git\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.07518796992481203],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.915, 0.3325, 0.2125]], {189., -45.}], InsetBox[
+     StyleBox["\<\"MPI\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.05714285714285714],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.838355547812947, 0.44746667828057946`, 
+        0.0208888695323676]], {170., 104.}], InsetBox[
+     StyleBox["\<\"HTML\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.039097744360902256`],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.9324333565611593, 0.5282889043741062, 
+        0.0921900209050434]], {-166., 111.}], InsetBox[
+     StyleBox["\<\"Java\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.039097744360902256`],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.6753413537738198, 0.3589675436319385, 
+        0.5991466155654507]], {128., 158.}], InsetBox[
+     StyleBox["\<\"Gnuplot\"\>",
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.021052631578947368`],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[
+       0.8857244243136628, 0.3764133635295058, 
+        0.1393110607841571]], {-184., -62.}]}},
+  Background->GrayLevel[0, 0],
+  ImageSize->800,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> Automatic},
+  PlotRange->{{-225.5, 249.5}, {-212.5, 219.5}}]], "Output",
+ CellChangeTimes->{
+  3.672592795735763*^9, {3.672592873759346*^9, 3.672592896002383*^9}, 
+   3.672592928542178*^9, {3.672592991393009*^9, 3.67259303105408*^9}}]
+}, Open  ]]
+},
+WindowSize->{948, 690},
+WindowMargins->{{97, Automatic}, {-63, Automatic}},
+FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 6, \
+2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 544, 14, 28, "Input"],
+Cell[CellGroupData[{
+Cell[1127, 38, 2218, 59, 449, InheritFromParent],
+Cell[3348, 99, 8068, 232, 743, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
