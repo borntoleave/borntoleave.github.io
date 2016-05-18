@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11807,        352]
-NotebookOptionsPosition[     11432,        334]
-NotebookOutlinePosition[     11786,        350]
-CellTagsIndexPosition[     11743,        347]
+NotebookDataLength[     13049,        386]
+NotebookOptionsPosition[     12560,        364]
+NotebookOutlinePosition[     12914,        380]
+CellTagsIndexPosition[     12871,        377]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -87,14 +87,15 @@ Cell[BoxData[{
  RowBox[{"WordCloud", "[", 
   RowBox[{"skills", ",", 
    RowBox[{"WordSpacings", "\[Rule]", "3"}], ",", 
-   RowBox[{"ImageSize", "\[Rule]", "800"}]}], "]"}]}], "Input",
+   RowBox[{"ImageSize", "\[Rule]", "800"}], ",", 
+   RowBox[{"Background", "\[Rule]", "None"}]}], "]"}]}], "Input",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQBmIQ/apikfLLmNeOWvNbdUH0P5nfqSD64Yy2DBBd596d
+1:eJxTTMoPSmViYGAQAWIQ/apikfLLmNeOWvNbdUH0P5nfqSD64Yy2DBBd596d
 C6J3sR4C0wkM/kUgOi9ToAxEi1r+aQbRPN84WkD0shN/OkB0jrNiF4iepqu1
 BkQLKZmBaW2RO1tAtNcBvX0gmsFF4jCI/uk14zSINpn04wKITv234zKItovJ
 ugOib7aV3QXRq+8cfgiiGxZWPQbRd1oVXoLofWHGYLrlaeVbEF3zro/xFZDe
 v+IQG4h+lNTMD6Irv7sKg+g4XQFjEM32dbs1iOZjm2QPomW2b3YG0c/6doHp
-VfI9niDaxO98AIgGAMqQqR0=
+VfI9niDaxO98AIjWMJme/hpI93OpZ4BoAJpMsIY=
   "]],
 
 Cell[BoxData[
@@ -327,9 +328,38 @@ Cell[BoxData[
   Method->{
    "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> Automatic},
   PlotRange->{{-225.5, 249.5}, {-212.5, 219.5}}]], "Output",
- CellChangeTimes->{
-  3.672592795735763*^9, {3.672592873759346*^9, 3.672592896002383*^9}, 
-   3.672592928542178*^9, {3.672592991393009*^9, 3.67259303105408*^9}}]
+ CellChangeTimes->{3.672595267618618*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"NotebookDirectory", "[", "]"}], "<>", "\"\<word.png\>\""}], ",", 
+   
+   RowBox[{"Rasterize", "[", 
+    RowBox[{
+     RowBox[{"WordCloud", "[", 
+      RowBox[{"skills", ",", 
+       RowBox[{"WordSpacings", "\[Rule]", "3"}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "800"}], ",", 
+       RowBox[{"Background", "\[Rule]", "None"}]}], "]"}], ",", 
+     RowBox[{"Background", "\[Rule]", "None"}], ",", 
+     RowBox[{"RasterSize", "\[Rule]", "3200"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "800"}]}], "]"}], ",", "\"\<PNG\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6725950555149527`*^9, 3.6725951044195633`*^9}, {
+  3.672595149285742*^9, 3.672595180021734*^9}, {3.672595275214066*^9, 
+  3.672595275627503*^9}, {3.672595324543538*^9, 3.672595325750396*^9}, {
+  3.6725954878120203`*^9, 3.672595490670537*^9}}],
+
+Cell[BoxData["\<\"/Users/b2l/GitHub/borntoleave.github.io/word.png\"\>"], \
+"Output",
+ CellChangeTimes->{{3.672595067974674*^9, 3.672595106291615*^9}, 
+   3.672595182379098*^9, 3.672595278855637*^9, 3.672595330926797*^9, 
+   3.672595497000599*^9}]
 }, Open  ]]
 },
 WindowSize->{948, 690},
@@ -351,8 +381,12 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 544, 14, 28, "Input"],
 Cell[CellGroupData[{
-Cell[1127, 38, 2218, 59, 449, InheritFromParent],
-Cell[3348, 99, 8068, 232, 743, "Output"]
+Cell[1127, 38, 2286, 60, 449, "Input"],
+Cell[3416, 100, 7948, 230, 743, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11401, 335, 893, 20, 63, InheritFromParent],
+Cell[12297, 357, 247, 4, 28, "Output"]
 }, Open  ]]
 }
 ]
