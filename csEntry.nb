@@ -1,0 +1,135 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4254,        126]
+NotebookOptionsPosition[      3894,        109]
+NotebookOutlinePosition[      4247,        125]
+CellTagsIndexPosition[      4204,        122]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"t", "[", "y_", "]"}], ":=", 
+  RowBox[{"Graphics", "@", 
+   RowBox[{"Rectangle", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "5"}], ",", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", "y"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", 
+       RowBox[{"1", "+", "y"}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"f", "[", "y_", "]"}], ":=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Rectangle", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "5"}], ",", 
+         RowBox[{
+          RowBox[{"-", "1"}], "+", "y"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "0.5"}], ",", 
+         RowBox[{"1", "+", "y"}]}], "}"}]}], "]"}], ",", 
+     RowBox[{"Rectangle", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.5", ",", 
+         RowBox[{
+          RowBox[{"-", "1"}], "+", "y"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"5", ",", 
+         RowBox[{"1", "+", "y"}]}], "}"}]}], "]"}]}], "}"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"sec", "[", "r_", "]"}], ":=", 
+  RowBox[{"Sequence", "[", 
+   RowBox[{
+    RowBox[{"t", "[", "r", "]"}], ",", 
+    RowBox[{"f", "[", 
+     RowBox[{"r", "+", "3"}], "]"}], ",", 
+    RowBox[{"t", "[", 
+     RowBox[{"r", "+", "6"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"sec", "[", "10", "]"}], ",", 
+    RowBox[{"sec", "[", "20", "]"}]}], "}"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.672596607008432*^9, 3.672596646860865*^9}, {
+  3.672596683769719*^9, 3.672596715757704*^9}, {3.672596755873518*^9, 
+  3.6725972726095133`*^9}, {3.6725973053772182`*^9, 3.6725974785079*^9}, {
+  3.672597762066926*^9, 3.672598174771181*^9}, {3.672598827603305*^9, 
+  3.672599015355638*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{
+   RectangleBox[{-5, 9}, {5, 11}], {RectangleBox[{-5, 12}, {-0.5, 14}], 
+    RectangleBox[{0.5, 12}, {5, 14}]}, RectangleBox[{-5, 15}, {5, 17}], 
+   RectangleBox[{-5, 19}, {5, 21}], {RectangleBox[{-5, 22}, {-0.5, 24}], 
+    RectangleBox[{0.5, 22}, {5, 24}]}, 
+   RectangleBox[{-5, 25}, {5, 27}]}]], "Output",
+ CellChangeTimes->{{3.672597806003397*^9, 3.672597950616534*^9}, {
+   3.672598017965909*^9, 3.672598034578095*^9}, {3.672598082833639*^9, 
+   3.6725981749913197`*^9}, 3.6725988418818808`*^9, {3.672598873327523*^9, 
+   3.672598958686975*^9}, {3.672598990044066*^9, 
+   3.672599016083776*^9}},ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJztnMtqwkAUhkemj9Ct4NPYVR8iSFEXscVEH8pVt15XunOhW8W9groQFFzI
+6ZxcSptJwkSwxvIH5oyZfPnUSRaHEyavllt7sy23XrFKL03ro1avOKXye1MN
+yYIQ4ihE4bMk+DOp3SAcSW3qYEr35HWS9vs9DYdDbmLtRX8s2NTeL7zf71P4
+NWsvSur1ekk4m6P4YDAADhw4cODAgQNPw/lQFOcsJAE/HA40nU65KZyjPxbB
+DTKkv+7Cf7DZbKjT6XATVS9Kms1m3//gOeDm87nG8bkJE8NZWjiP1WAebdvW
+tI1GQ+O63a7J1Qxxx3E0reu6Gmd4k0ALLbTQQgsttNBCCy200EIL7X/SjkYj
+klJyUzhHSa1WS9O2222N45+UoD2dTrRarbgpnKOk7XaraXe7ncbxuRFtLmol
+8ZWTy+VC5/OZm1h70R9LmJjxeEzFYpGbwjn6Ywl4xkJUropowIEDBw4cOPC7
+4T+fwYR4yrOV5XLp5ZWqKZyjpMViEcVzkYM9Zpdxpq+8jrm6B4EDBw4cOHDg
+d8MzVpMmk0mWWpVhJSwXOVh8RmZateQxg6rljWusj1VohhZaaKGFFlpooYUW
+WmihhRbau2tvtE4pblUVr6CKag1XVeWiVhJfOTFcAXdlISpXRTTgwIEDBw4c
++KPgGd8hZPiGorTUSBS+ABxG+LA=\
+\>"]]
+}, Open  ]]
+},
+WindowSize->{808, 655},
+WindowMargins->{{Automatic, 89}, {-4, Automatic}},
+FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 6, \
+2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1910, 58, 97, "Input"],
+Cell[2493, 82, 1385, 24, 447, 337, 6, "CachedBoxData", "BoxData", "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
