@@ -1118,7 +1118,7 @@ gif\"\>"], "Output",
 }, Open  ]]
 },
 WindowSize->{808, 655},
-WindowMargins->{{-25, Automatic}, {Automatic, 0}},
+WindowMargins->{{170, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 6, \
 2015)",
 StyleDefinitions->"Default.nb"
