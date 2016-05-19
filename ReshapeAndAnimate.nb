@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4121,        129]
-NotebookOptionsPosition[      3641,        107]
-NotebookOutlinePosition[      3995,        123]
-CellTagsIndexPosition[      3952,        120]
+NotebookDataLength[      4223,        131]
+NotebookOptionsPosition[      3743,        109]
+NotebookOutlinePosition[      4097,        125]
+CellTagsIndexPosition[      4054,        122]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -78,19 +78,21 @@ Cell[BoxData[{
    RowBox[{"Join", "[", 
     RowBox[{"s", ",", 
      RowBox[{"Reverse", "@", "s"}]}], "]"}], ",", 
-   RowBox[{"1", "/", "12"}]}], "]"}]}], "Input",
+   RowBox[{"1", "/", "16"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.672614938017538*^9, 3.6726149666025953`*^9}, 
    3.67261626154403*^9, {3.6726163546022778`*^9, 3.672616369219777*^9}, {
    3.6726165304508038`*^9, 3.6726165887308483`*^9}, {3.672616726651868*^9, 
    3.672616727728594*^9}, {3.672616788814035*^9, 3.672616837845018*^9}, {
    3.672616868216113*^9, 3.672616895943088*^9}, {3.672616980974234*^9, 
-   3.6726169998914213`*^9}, {3.672617047406839*^9, 3.6726170800392113`*^9}}],
+   3.6726169998914213`*^9}, {3.672617047406839*^9, 3.6726170800392113`*^9}, {
+   3.6726185649348173`*^9, 3.6726185962609386`*^9}}],
 
 Cell[BoxData["\<\"/Users/b2l/GitHub/borntoleave.github.io/phyEntry.gif\"\>"], \
 "Output",
  CellChangeTimes->{
   3.6726168447379427`*^9, {3.6726168749703217`*^9, 3.672616902305813*^9}, 
-   3.672617009422073*^9, {3.672617060934641*^9, 3.67261708898969*^9}}]
+   3.672617009422073*^9, {3.672617060934641*^9, 3.67261708898969*^9}, 
+   3.672618574409502*^9, 3.672618604931823*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -124,12 +126,12 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 1140, 32, 80, "Input"],
 Cell[CellGroupData[{
-Cell[1723, 56, 1255, 30, 63, "Input"],
-Cell[2981, 88, 255, 4, 28, "Output"]
+Cell[1723, 56, 1309, 31, 63, "Input"],
+Cell[3035, 89, 303, 5, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3273, 97, 140, 2, 28, InheritFromParent],
-Cell[3416, 101, 209, 3, 28, "Output"]
+Cell[3375, 99, 140, 2, 28, InheritFromParent],
+Cell[3518, 103, 209, 3, 28, "Output"]
 }, Open  ]]
 }
 ]
