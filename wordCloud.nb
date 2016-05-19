@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17574,        468]
-NotebookOptionsPosition[     17074,        445]
-NotebookOutlinePosition[     17447,        462]
-CellTagsIndexPosition[     17404,        459]
+NotebookDataLength[      7427,        194]
+NotebookOptionsPosition[      6958,        173]
+NotebookOutlinePosition[      7332,        190]
+CellTagsIndexPosition[      7289,        187]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -33,8 +33,6 @@ Cell[BoxData[
         RowBox[{"500", ",", "500"}], "}"}]}], "]"}]}]}]}], ";"}]], "Input",
  CellChangeTimes->{{3.672591625251031*^9, 3.6725916843300753`*^9}, {
    3.672591723478879*^9, 3.672591726557559*^9}, 3.672593421288859*^9}],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
@@ -142,278 +140,8 @@ Cell[BoxData[{
    3.6726079657849092`*^9, 3.672607966695606*^9}, {3.672608115896389*^9, 
    3.672608119629024*^9}, {3.672608285373255*^9, 3.6726082879874783`*^9}}],
 
-Cell[BoxData[
- GraphicsBox[{{}, {InsetBox[
-     StyleBox[
-      RotationBox["\<\"Mathematica\"\>",
-       BoxRotation->0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.1724137931034483],
-      FontWeight->Plain,
-      FontSlant->Italic,
-      FontTracking->"Plain",
-      FontColor->RGBColor[0.857359, 0.131106, 0.132128]], 
-     NCache[{-3, Rational[1, 2]}, {-3, 0.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"Data Analysis\"\>",
-       BoxRotation->-0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.12996479899396005`],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.8224230794150157, 0.7007921336733552, 0.25102135623442484`]], 
-     NCache[{-1, Rational[165, 2]}, {-1, 82.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"Photography\"\>",
-       BoxRotation->-0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.12996479899396005`],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.8224230794150157, 0.7007921336733552, 0.25102135623442484`]], 
-     NCache[{10, Rational[-183, 2]}, {10, -91.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"Visualization\"\>",
-       BoxRotation->-0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.10673762480623591`],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.5972343905099412, 0.742192771550143, 0.36766265606338366`]], 
-     NCache[{-20, Rational[-271, 2]}, {-20, -135.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"Machine Learning\"\>",
-       BoxRotation->0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.08178302605035553],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.3734998684478221, 0.6644105056768853, 0.6259129198377287]], 
-     NCache[{62, Rational[287, 2]}, {62, 143.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"Matlab\"\>",
-       BoxRotation->-0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.1517802379351817],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.9024228096454657, 0.4841082030810202, 0.19775174280370678`]], 
-     NCache[{-16, Rational[-377, 2]}, {-16, -188.5}]], InsetBox[
-     StyleBox["\<\"Digital Media\"\>",
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.10673762480623591`],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.5972343905099412, 0.742192771550143, 0.36766265606338366`]], 
-     NCache[{-45, Rational[373, 2]}, {-45, 186.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"Algorithm\"\>",
-       BoxRotation->-0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.08178302605035553],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.3734998684478221, 0.6644105056768853, 0.6259129198377287]], 
-     NCache[{-57, Rational[93, 2]}, {-57, 46.5}]], InsetBox[
-     StyleBox["\<\"C++\"\>",
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.1517802379351817],
-      FontWeight->Plain,
-      FontSlant->Italic,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.9024228096454657, 0.4841082030810202, 0.19775174280370678`]], 
-     NCache[{-37, Rational[469, 2]}, {-37, 234.5}]], InsetBox[
-     StyleBox["\<\"Shell scripts\"\>",
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.08178302605035553],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.3734998684478221, 0.6644105056768853, 0.6259129198377287]], 
-     NCache[{82, Rational[-101, 2]}, {82, -50.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"CUDA\"\>",
-       BoxRotation->0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.10673762480623591`],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.5972343905099412, 0.742192771550143, 0.36766265606338366`]], 
-     NCache[{-47, Rational[-487, 2]}, {-47, -243.5}]], InsetBox[
-     StyleBox["\<\"LaTeX\"\>",
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.10673762480623591`],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.5972343905099412, 0.742192771550143, 0.36766265606338366`]], 
-     NCache[{103, Rational[459, 2]}, {103, 229.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"Machine shop\"\>",
-       BoxRotation->0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.05464651346128818],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.2495845308223381, 0.3925635345612599, 0.8126989208194904]], 
-     NCache[{100, Rational[-475, 2]}, {100, -237.5}]], InsetBox[
-     StyleBox["\<\"3D printer\"\>",
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.05464651346128818],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.2495845308223381, 0.3925635345612599, 0.8126989208194904]], 
-     NCache[{135, Rational[-371, 2]}, {135, -185.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"Python\"\>",
-       BoxRotation->0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.05464651346128818],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.2495845308223381, 0.3925635345612599, 0.8126989208194904]], 
-     NCache[{115, Rational[231, 2]}, {115, 115.5}]], InsetBox[
-     StyleBox["\<\"Maple\"\>",
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.05464651346128818],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.2495845308223381, 0.3925635345612599, 0.8126989208194904]], 
-     NCache[{-167, Rational[77, 2]}, {-167, 38.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"Git\"\>",
-       BoxRotation->-0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.08178302605035553],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.3734998684478221, 0.6644105056768853, 0.6259129198377287]], 
-     NCache[{-169, Rational[-143, 2]}, {-169, -71.5}]], InsetBox[
-     StyleBox["\<\"HTML\"\>",
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.05464651346128818],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.2495845308223381, 0.3925635345612599, 0.8126989208194904]], 
-     NCache[{-109, Rational[283, 2]}, {-109, 141.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"Java\"\>",
-       BoxRotation->-0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.05464651346128818],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.2495845308223381, 0.3925635345612599, 0.8126989208194904]], 
-     NCache[{-173, Rational[-205, 2]}, {-173, -102.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"MPI\"\>",
-       BoxRotation->0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.05464651346128818],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.2495845308223381, 0.3925635345612599, 0.8126989208194904]], 
-     NCache[{136, Rational[-309, 2]}, {136, -154.5}]], InsetBox[
-     StyleBox["\<\"SQL\"\>",
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.05464651346128818],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[
-       0.2495845308223381, 0.3925635345612599, 0.8126989208194904]], 
-     NCache[{-137, Rational[-321, 2]}, {-137, -160.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"JavaScript\"\>",
-       BoxRotation->0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.024630541871921183`],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[0.471412, 0.108766, 0.527016]], 
-     NCache[{-40, Rational[-91, 2]}, {-40, -45.5}]], InsetBox[
-     StyleBox[
-      RotationBox["\<\"AutoCAD\"\>",
-       BoxRotation->0.10471975511965977`],
-      StripOnInput->False,
-      FontFamily->"Helvetica",
-      FontSize->Scaled[0.024630541871921183`],
-      FontWeight->Plain,
-      FontSlant->Plain,
-      FontTracking->"Plain",
-      FontColor->RGBColor[0.471412, 0.108766, 0.527016]], 
-     NCache[{-173, Rational[135, 2]}, {-173, 67.5}]]}},
-  Background->GrayLevel[0, 0],
-  ImageSize->1000,
-  Method->{
-   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> Automatic},
-  PlotRange->{{-205., 201.}, {-304.5, 305.5}}]], "Output",
- CellChangeTimes->{
-  3.6726067525416*^9, 3.6726067884114227`*^9, 3.6726070226015177`*^9, 
-   3.672607065602087*^9, {3.672607332798582*^9, 3.672607345744575*^9}, 
-   3.6726073763954153`*^9, {3.6726074122512197`*^9, 3.6726074818823833`*^9}, 
-   3.672607537057695*^9, {3.6726075699188137`*^9, 3.672607576520876*^9}, {
-   3.6726076159434032`*^9, 3.672607651843369*^9}, {3.672607801252852*^9, 
-   3.6726080539469967`*^9}, {3.672608122322989*^9, 3.672608599039083*^9}}]
-}, Open  ]],
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.672614872970317*^9, 3.672614872992516*^9}}],
 
 Cell[CellGroupData[{
 
@@ -444,7 +172,7 @@ Cell[BoxData["\<\"/Users/b2l/GitHub/borntoleave.github.io/wordCloud.png\"\>"],\
 }, Open  ]]
 },
 WindowSize->{948, 690},
-WindowMargins->{{91, Automatic}, {24, Automatic}},
+WindowMargins->{{Automatic, 34}, {-65, Automatic}},
 Magnification->0.5,
 FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 6, \
 2015)",
@@ -462,13 +190,11 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 544, 14, 19, "Input"],
+Cell[1105, 36, 4650, 104, 252, "Input"],
+Cell[5758, 142, 92, 1, 19, InheritFromParent],
 Cell[CellGroupData[{
-Cell[1127, 38, 4650, 104, 252, "Input"],
-Cell[5780, 144, 10174, 270, 758, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[15991, 419, 720, 16, 19, "Input"],
-Cell[16714, 437, 344, 5, 19, "Output"]
+Cell[5875, 147, 720, 16, 19, "Input"],
+Cell[6598, 165, 344, 5, 19, "Output"]
 }, Open  ]]
 }
 ]
