@@ -10,20 +10,18 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4254,        126]
-NotebookOptionsPosition[      3894,        109]
-NotebookOutlinePosition[      4247,        125]
-CellTagsIndexPosition[      4204,        122]
+NotebookDataLength[     46975,       1158]
+NotebookOptionsPosition[     45991,       1119]
+NotebookOutlinePosition[     46344,       1135]
+CellTagsIndexPosition[     46301,       1132]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{"t", "[", "y_", "]"}], ":=", 
-  RowBox[{"Graphics", "@", 
+  RowBox[{"{", 
    RowBox[{"Rectangle", "[", 
     RowBox[{
      RowBox[{"{", 
@@ -33,82 +31,1094 @@ Cell[BoxData[{
         RowBox[{"-", "1"}], "+", "y"}]}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{"5", ",", 
-       RowBox[{"1", "+", "y"}]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+       RowBox[{"1", "+", "y"}]}], "}"}]}], "]"}], 
+   "}"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"f", "[", "y_", "]"}], ":=", 
-  RowBox[{"Graphics", "[", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"Rectangle", "[", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"-", "5"}], ",", 
-         RowBox[{
-          RowBox[{"-", "1"}], "+", "y"}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"-", "0.5"}], ",", 
-         RowBox[{"1", "+", "y"}]}], "}"}]}], "]"}], ",", 
-     RowBox[{"Rectangle", "[", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"0.5", ",", 
-         RowBox[{
-          RowBox[{"-", "1"}], "+", "y"}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"5", ",", 
-         RowBox[{"1", "+", "y"}]}], "}"}]}], "]"}]}], "}"}], 
-   "]"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"sec", "[", "r_", "]"}], ":=", 
-  RowBox[{"Sequence", "[", 
-   RowBox[{
-    RowBox[{"t", "[", "r", "]"}], ",", 
-    RowBox[{"f", "[", 
-     RowBox[{"r", "+", "3"}], "]"}], ",", 
-    RowBox[{"t", "[", 
-     RowBox[{"r", "+", "6"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
- RowBox[{"Show", "[", 
   RowBox[{"{", 
    RowBox[{
-    RowBox[{"sec", "[", "10", "]"}], ",", 
-    RowBox[{"sec", "[", "20", "]"}]}], "}"}], "]"}]}], "Input",
- CellChangeTimes->{{3.672596607008432*^9, 3.672596646860865*^9}, {
-  3.672596683769719*^9, 3.672596715757704*^9}, {3.672596755873518*^9, 
-  3.6725972726095133`*^9}, {3.6725973053772182`*^9, 3.6725974785079*^9}, {
-  3.672597762066926*^9, 3.672598174771181*^9}, {3.672598827603305*^9, 
-  3.672599015355638*^9}}],
+    RowBox[{"Rectangle", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "5"}], ",", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "y"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.5"}], ",", 
+        RowBox[{"1", "+", "y"}]}], "}"}]}], "]"}], ",", 
+    RowBox[{"Rectangle", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0.5", ",", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "y"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5", ",", 
+        RowBox[{"1", "+", "y"}]}], "}"}]}], "]"}]}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"b", "[", "y_", "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"t", "[", "y", "]"}], ",", 
+     RowBox[{"f", "[", "y", "]"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"sec", "[", 
+   RowBox[{"r_", ",", 
+    RowBox[{"{", 
+     RowBox[{"l_", ",", "m_", ",", "n_"}], "}"}]}], "]"}], ":=", 
+  RowBox[{"{", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"b", "[", "r", "]"}], "[", 
+      RowBox[{"[", 
+       RowBox[{"l", "+", "1"}], "]"}], "]"}], ",", 
+     RowBox[{
+      RowBox[{"b", "[", 
+       RowBox[{"r", "+", "3"}], "]"}], "[", 
+      RowBox[{"[", 
+       RowBox[{"m", "+", "1"}], "]"}], "]"}], ",", 
+     RowBox[{
+      RowBox[{"b", "[", 
+       RowBox[{"r", "+", "6"}], "]"}], "[", 
+      RowBox[{"[", 
+       RowBox[{"n", "+", "1"}], "]"}], "]"}]}], "]"}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"Rotate", "[", 
+     RowBox[{
+      RowBox[{"sec", "[", 
+       RowBox[{"20", ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1", ",", "0"}], "}"}]}], "]"}], ",", 
+      RowBox[{"3", 
+       RowBox[{"Pi", "/", "4"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}]}], "]"}], "]"}], ",", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"Rotate", "[", 
+     RowBox[{
+      RowBox[{"sec", "[", 
+       RowBox[{"20", ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1", ",", "0"}], "}"}]}], "]"}], ",", 
+      RowBox[{"Pi", "/", "4"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}]}], "]"}], "]"}], ",", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"sec", "[", 
+     RowBox[{"20", ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1", ",", "0"}], "}"}]}], "]"}], "]"}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBWIQLez6gP9NzGtH057bIiC6a2GFJIiWsa+QBdF3Plcr
+gWilRuFkEK0jpJMOonc4XKgB0U4qTgtAdMvaG5dBtJtfsepbIJ2c+NoGRB8p
+WH/sO0j+y2kw3bNf9TWITjVrfwOid8z58BFEd/2c+A1EZ1zIdPoBpNtfX3IB
+0R3SvzxA9A0F30AQ7fS6NwVE55ncKADRddvVy0D0ouV7y0G0jvXzGhDts2JD
+LYg+n3m/FUS7xHTPBtFGycxrQPRhLVswfaI3ehuIdouvB9O29WmnQfQlk/UX
+QLTE8lf/QPSti3tZfgLpM6srREH01tpeWRB9lX2qA4i+pLMPTAMAyBK+/A==
+
+  "]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Graphics", "[", 
+     RowBox[{"Rotate", "[", 
+      RowBox[{
+       RowBox[{"sec", "[", 
+        RowBox[{"15", ",", 
+         RowBox[{"#", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ",", 
+       RowBox[{"#", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}]}], "]"}], "]"}], "&"}], "/@", 
+   RowBox[{"Transpose", "@", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Flatten", "[", 
+       RowBox[{
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"i", ",", "j", ",", "k"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", "0", ",", "1"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"j", ",", "1", ",", "0", ",", 
+            RowBox[{"-", "1"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", "0", ",", "1"}], "}"}]}], "]"}], ",", "2"}], 
+       "]"}], ",", 
+      RowBox[{"Range", "[", 
+       RowBox[{"0", ",", 
+        RowBox[{
+         RowBox[{"2", "Pi"}], "-", 
+         RowBox[{"Pi", "/", "4"}]}], ",", 
+        RowBox[{"Pi", "/", "4"}]}], "]"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.672622330269134*^9, {3.672623347541524*^9, 3.672623464127837*^9}, {
+   3.6726235103566523`*^9, 3.6726235153708677`*^9}, {3.672623553078927*^9, 
+   3.672623601623444*^9}, {3.67262365556912*^9, 3.672623734827032*^9}}],
 
 Cell[BoxData[
  GraphicsBox[{
-   RectangleBox[{-5, 9}, {5, 11}], {RectangleBox[{-5, 12}, {-0.5, 14}], 
-    RectangleBox[{0.5, 12}, {5, 14}]}, RectangleBox[{-5, 15}, {5, 17}], 
-   RectangleBox[{-5, 19}, {5, 21}], {RectangleBox[{-5, 22}, {-0.5, 24}], 
-    RectangleBox[{0.5, 22}, {5, 24}]}, 
-   RectangleBox[{-5, 25}, {5, 27}]}]], "Output",
- CellChangeTimes->{{3.672597806003397*^9, 3.672597950616534*^9}, {
-   3.672598017965909*^9, 3.672598034578095*^9}, {3.672598082833639*^9, 
-   3.6725981749913197`*^9}, 3.6725988418818808`*^9, {3.672598873327523*^9, 
-   3.672598958686975*^9}, {3.672598990044066*^9, 
-   3.672599016083776*^9}},ImageCache->GraphicsData["CompressedBitmap", "\<\
-eJztnMtqwkAUhkemj9Ct4NPYVR8iSFEXscVEH8pVt15XunOhW8W9groQFFzI
-6ZxcSptJwkSwxvIH5oyZfPnUSRaHEyavllt7sy23XrFKL03ro1avOKXye1MN
-yYIQ4ihE4bMk+DOp3SAcSW3qYEr35HWS9vs9DYdDbmLtRX8s2NTeL7zf71P4
-NWsvSur1ekk4m6P4YDAADhw4cODAgQNPw/lQFOcsJAE/HA40nU65KZyjPxbB
-DTKkv+7Cf7DZbKjT6XATVS9Kms1m3//gOeDm87nG8bkJE8NZWjiP1WAebdvW
-tI1GQ+O63a7J1Qxxx3E0reu6Gmd4k0ALLbTQQgsttNBCCy200EIL7X/SjkYj
-klJyUzhHSa1WS9O2222N45+UoD2dTrRarbgpnKOk7XaraXe7ncbxuRFtLmol
-8ZWTy+VC5/OZm1h70R9LmJjxeEzFYpGbwjn6Ywl4xkJUropowIEDBw4cOPC7
-4T+fwYR4yrOV5XLp5ZWqKZyjpMViEcVzkYM9Zpdxpq+8jrm6B4EDBw4cOHDg
-d8MzVpMmk0mWWpVhJSwXOVh8RmZateQxg6rljWusj1VohhZaaKGFFlpooYUW
-WmihhRbau2tvtE4pblUVr6CKag1XVeWiVhJfOTFcAXdlISpXRTTgwIEDBw4c
-+KPgGd8hZPiGorTUSBS+ABxG+LA=\
-\>"]]
+   GeometricTransformationBox[{RectangleBox[{-5, 14}, {5, 16}], 
+     RectangleBox[{-5, 17}, {-0.5, 19}], RectangleBox[{0.5, 17}, {5, 19}], 
+     RectangleBox[{-5, 20}, {5, 22}]}, {{{1, 0}, {0, 1}}, {0, 0}}], 
+   GeometricTransformationBox[{RectangleBox[{-5, 14}, {5, 16}], 
+     RectangleBox[{-5, 17}, {-0.5, 19}], RectangleBox[{0.5, 17}, {5, 19}], 
+     RectangleBox[{-5, 20}, {-0.5, 22}], 
+     RectangleBox[{0.5, 20}, {5, 22}]}, {{{
+     0.7071067811865475, -0.7071067811865475}, {0.7071067811865475, 
+     0.7071067811865475}}, {0, 0}}], 
+   GeometricTransformationBox[{RectangleBox[{-5, 14}, {5, 16}], 
+     RectangleBox[{-5, 17}, {5, 19}], RectangleBox[{-5, 20}, {5, 22}]}, {{{
+     0, -1}, {1, 0}}, {0, 0}}], 
+   GeometricTransformationBox[{RectangleBox[{-5, 14}, {5, 16}], 
+     RectangleBox[{-5, 17}, {5, 19}], RectangleBox[{-5, 20}, {-0.5, 22}], 
+     RectangleBox[{0.5, 20}, {5, 22}]}, {{{-0.7071067811865475, \
+-0.7071067811865475}, {0.7071067811865475, -0.7071067811865475}}, {0, 0}}], 
+   GeometricTransformationBox[{RectangleBox[{-5, 14}, {-0.5, 16}], 
+     RectangleBox[{0.5, 14}, {5, 16}], RectangleBox[{-5, 17}, {-0.5, 19}], 
+     RectangleBox[{0.5, 17}, {5, 19}], 
+     RectangleBox[{-5, 20}, {5, 22}]}, {{{-1, 0}, {0, -1}}, {0, 0}}], 
+   GeometricTransformationBox[{RectangleBox[{-5, 14}, {-0.5, 16}], 
+     RectangleBox[{0.5, 14}, {5, 16}], RectangleBox[{-5, 17}, {-0.5, 19}], 
+     RectangleBox[{0.5, 17}, {5, 19}], RectangleBox[{-5, 20}, {-0.5, 22}], 
+     RectangleBox[{0.5, 20}, {5, 22}]}, {{{-0.7071067811865475, 
+     0.7071067811865475}, {-0.7071067811865475, -0.7071067811865475}}, {0, 
+     0}}], GeometricTransformationBox[{RectangleBox[{-5, 14}, {-0.5, 16}], 
+     RectangleBox[{0.5, 14}, {5, 16}], RectangleBox[{-5, 17}, {5, 19}], 
+     RectangleBox[{-5, 20}, {5, 22}]}, {{{0, 1}, {-1, 0}}, {0, 0}}], 
+   GeometricTransformationBox[{RectangleBox[{-5, 14}, {-0.5, 16}], 
+     RectangleBox[{0.5, 14}, {5, 16}], RectangleBox[{-5, 17}, {5, 19}], 
+     RectangleBox[{-5, 20}, {-0.5, 22}], 
+     RectangleBox[{0.5, 20}, {5, 22}]}, {{{0.7071067811865475, 
+     0.7071067811865475}, {-0.7071067811865475, 0.7071067811865475}}, {0, 
+     0}}]}]], "Output",
+ CellChangeTimes->{
+  3.672623464842498*^9, 3.6726235160078363`*^9, {3.672623557517212*^9, 
+   3.672623570491703*^9}, 3.6726236027727823`*^9, {3.67262367493428*^9, 
+   3.672623701725637*^9}, 3.672623735313436*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Flatten", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"i", ",", "j", ",", "k"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"j", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "0", ",", "1"}], "}"}]}], "]"}], ",", "2"}], "]"}], 
+   ",", 
+   RowBox[{"Range", "[", 
+    RowBox[{"0", ",", 
+     RowBox[{"2", "Pi"}], ",", 
+     RowBox[{"Pi", "/", "4"}]}], "]"}]}], "}"}]], "Input",
+ CellChangeTimes->{{3.672623519046109*^9, 3.6726235473399057`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "2"], ",", 
+     FractionBox[
+      RowBox[{"3", " ", "\[Pi]"}], "4"], ",", "\[Pi]", ",", 
+     FractionBox[
+      RowBox[{"5", " ", "\[Pi]"}], "4"], ",", 
+     FractionBox[
+      RowBox[{"3", " ", "\[Pi]"}], "2"], ",", 
+     FractionBox[
+      RowBox[{"7", " ", "\[Pi]"}], "4"], ",", 
+     RowBox[{"2", " ", "\[Pi]"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.672623496471134*^9, {3.672623530721121*^9, 3.672623547957993*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BitXor", "[", 
+  RowBox[{"0", ",", "1"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6726239781218357`*^9, 3.672624018782518*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.672623999848366*^9, 3.672624019415518*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"l", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1", ",", "1"}], "}"}], ",", 
+       RowBox[{"-", "Pi"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{"-", "Pi"}], "/", "4"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1", ",", "1"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{"-", "5"}], 
+        RowBox[{"Pi", "/", "4"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{"-", "Pi"}], "/", "2"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{"-", "3"}], 
+        RowBox[{"Pi", "/", "2"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1", ",", "0"}], "}"}], ",", 
+       RowBox[{"5", 
+        RowBox[{"Pi", "/", "4"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{"-", "7"}], 
+        RowBox[{"Pi", "/", "4"}]}]}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"c", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1"}], "}"}], ",", 
+     RowBox[{"-", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1"}], "}"}]}], ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"{", 
+       RowBox[{
+        SqrtBox["2"], ",", 
+        SqrtBox["2"]}], "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "1"}], "/", 
+      RowBox[{"{", 
+       RowBox[{
+        SqrtBox["2"], ",", 
+        SqrtBox["2"]}], "}"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0"}], "}"}], ",", 
+     RowBox[{"-", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}]}], ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"{", 
+       RowBox[{
+        SqrtBox["2"], ",", 
+        RowBox[{"-", 
+         SqrtBox["2"]}]}], "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "1"}], "/", 
+      RowBox[{"{", 
+       RowBox[{
+        SqrtBox["2"], ",", 
+        RowBox[{"-", 
+         SqrtBox["2"]}]}], "}"}]}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lFold", "=", 
+   RowBox[{"FoldList", "[", 
+    RowBox[{"Append", ",", 
+     RowBox[{"{", 
+      RowBox[{"l", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "}"}], ",", 
+     RowBox[{"l", "[", 
+      RowBox[{"[", 
+       RowBox[{"2", ";;"}], "]"}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"cFold", "=", 
+   RowBox[{"FoldList", "[", 
+    RowBox[{"Append", ",", 
+     RowBox[{"{", 
+      RowBox[{"c", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "}"}], ",", 
+     RowBox[{"c", "[", 
+      RowBox[{"[", 
+       RowBox[{"2", ";;"}], "]"}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"series", "=", 
+   RowBox[{"Prepend", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Show", "[", 
+        RowBox[{
+         RowBox[{"Graphics", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"Rotate", "[", 
+               RowBox[{
+                RowBox[{"sec", "[", 
+                 RowBox[{"14", ",", 
+                  RowBox[{"#", "[", 
+                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ",", 
+                RowBox[{"#", "[", 
+                 RowBox[{"[", "2", "]"}], "]"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"0", ",", "0"}], "}"}]}], "]"}], "&"}], "/@", 
+             RowBox[{"lFold", "[", 
+              RowBox[{"[", "i", "]"}], "]"}]}], ",", "Thick", ",", "Blue", 
+            ",", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Arrow", "[", 
+               RowBox[{"12", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", "#"}], "}"}]}], "]"}],
+               "&"}], "/@", 
+             RowBox[{"cFold", "[", 
+              RowBox[{"[", "i", "]"}], "]"}]}]}], "}"}], "]"}], ",", 
+         RowBox[{"PlotRange", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "25"}], ",", "25"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "25"}], ",", "25"}], "}"}]}], "}"}]}], ",", 
+         RowBox[{"ImageSize", "\[Rule]", "300"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", 
+         RowBox[{"Length", "[", "lFold", "]"}]}], "}"}]}], "]"}], ",", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"White", ",", 
+         RowBox[{"Circle", "[", "]"}]}], "}"}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "300"}]}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"ListAnimate", "[", "series", "]"}]}], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQAWIQ/eNqucqvmNeOt/IKHUD0xqrZ7iDaoOWIL4j2+vgi
+GETHpRWFgeiqqy1RIPqm0dIEEO1x/FcKiGb415wBoht9iwpB9Iq/l4tBtIqj
+fQOITv+YCKZdXHavBNFP1r/dBaLLm09Z/gbSH9bt9gDRmzSiAkD0hcJ4MJ2i
+p1oAoqco/y0G0W8WPCwH0ScMihtA9JcHx/tAtJiE5kwQrTH92TIQLbnrA5he
+1Xx8I4ju4PU6BqJNf887DaIf7Z50Hmyvv/9TEH1IpfMliBZROvUFRMc8MvwO
+pt1//QHbN6ec7Q+Qdg5drAOi91XONwfRAGlWvAQ=
+  "]],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`i57$$ = 2, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {
+    "\"min\"" :> {$CellContext`i57$$ = 1}, 
+     "\"max\"" :> {$CellContext`i57$$ = 9}}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`i57$$], 1, ""}, 1, 9, 1}}, Typeset`size$$ = 
+    Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`i57$425339$$ = 0}, 
+    PaneBox[
+     PanelBox[
+      DynamicWrapperBox[GridBox[{
+         {
+          ItemBox[
+           ItemBox[
+            TagBox[
+             StyleBox[GridBox[{
+                {"\<\"\"\>", 
+                 AnimatorBox[Dynamic[$CellContext`i57$$], {1, 9, 1},
+                  AnimationRate->Automatic,
+                  AnimationRunTime->11.325128078460693`,
+                  AnimationRunning->False,
+                  AnimationTimeIndex->0.7001280784606934,
+                  
+                  AppearanceElements->{
+                   "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons",
+                     "DirectionButton"},
+                  AutoAction->False,
+                  DisplayAllSteps->True]}
+               },
+               AutoDelete->False,
+               
+               GridBoxAlignment->{
+                "Columns" -> {Right, {Left}}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+              "ListAnimateLabel",
+              StripOnInput->False],
+             {"ControlArea", Top}],
+            Alignment->{Automatic, Inherited},
+            StripOnInput->False],
+           Background->None,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            StyleBox[
+             PaneBox[
+              TagBox[
+               PaneSelectorBox[{1->
+                GraphicsBox[
+                 {GrayLevel[1], CircleBox[{0, 0}]},
+                 ImageSize->300], 2->
+                
+                GraphicsBox[{
+                  GeometricTransformationBox[{RectangleBox[{-5, 13}, {5, 15}],
+                     RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{1, 0}, {0, 1}}, {0, 
+                    0}}], 
+                  {RGBColor[0, 0, 1], Thickness[Large], 
+                   ArrowBox[{{0, 0}, {0, 12}}]}},
+                 ImageSize->300,
+                 PlotRange->{{-25, 25}, {-25, 25}}], 3->
+                
+                GraphicsBox[{{
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{1, 0}, {0, 1}}, {0, 
+                    0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{-1, 0}, {0, -1}}, {
+                    0, 0}}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], 
+                   ArrowBox[{{0, 0}, {0, 12}}], ArrowBox[{{0, 0}, {0, -12}}]}},
+                 ImageSize->300,
+                 PlotRange->{{-25, 25}, {-25, 25}}], 4->
+                
+                GraphicsBox[{{
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{1, 0}, {0, 1}}, {0, 
+                    0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{-1, 0}, {0, -1}}, {
+                    0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{0.7071067811865475, 
+                    0.7071067811865475}, {-0.7071067811865475, 
+                    0.7071067811865475}}, {0, 0}}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], 
+                   ArrowBox[{{0, 0}, {0, 12}}], ArrowBox[{{0, 0}, {0, -12}}], 
+                   ArrowBox[
+                    NCache[{{0, 0}, {
+                    6 2^Rational[1, 2], 6 2^Rational[1, 2]}}, {{0, 0}, {
+                    8.485281374238571, 8.485281374238571}}]]}},
+                 ImageSize->300,
+                 PlotRange->{{-25, 25}, {-25, 25}}], 5->
+                
+                GraphicsBox[{{
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{1, 0}, {0, 1}}, {0, 
+                    0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{-1, 0}, {0, -1}}, {
+                    0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{0.7071067811865475, 
+                    0.7071067811865475}, {-0.7071067811865475, 
+                    0.7071067811865475}}, {0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, \
+{{{-0.7071067811865475, -0.7071067811865475}, {
+                    0.7071067811865475, -0.7071067811865475}}, {0, 0}}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], 
+                   ArrowBox[{{0, 0}, {0, 12}}], ArrowBox[{{0, 0}, {0, -12}}], 
+                   ArrowBox[
+                    NCache[{{0, 0}, {
+                    6 2^Rational[1, 2], 6 2^Rational[1, 2]}}, {{0, 0}, {
+                    8.485281374238571, 8.485281374238571}}]], 
+                   ArrowBox[
+                    NCache[{{0, 
+                    0}, {(-6) 2^Rational[1, 2], (-6) 2^Rational[1, 2]}}, {{0, 
+                    0}, {-8.485281374238571, -8.485281374238571}}]]}},
+                 ImageSize->300,
+                 PlotRange->{{-25, 25}, {-25, 25}}], 6->
+                
+                GraphicsBox[{{
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{1, 0}, {0, 1}}, {0, 
+                    0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{-1, 0}, {0, -1}}, {
+                    0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{0.7071067811865475, 
+                    0.7071067811865475}, {-0.7071067811865475, 
+                    0.7071067811865475}}, {0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, \
+{{{-0.7071067811865475, -0.7071067811865475}, {
+                    0.7071067811865475, -0.7071067811865475}}, {0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{0, 1}, {-1, 0}}, {0,
+                     0}}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], 
+                   ArrowBox[{{0, 0}, {0, 12}}], ArrowBox[{{0, 0}, {0, -12}}], 
+                   ArrowBox[
+                    NCache[{{0, 0}, {
+                    6 2^Rational[1, 2], 6 2^Rational[1, 2]}}, {{0, 0}, {
+                    8.485281374238571, 8.485281374238571}}]], 
+                   ArrowBox[
+                    NCache[{{0, 
+                    0}, {(-6) 2^Rational[1, 2], (-6) 2^Rational[1, 2]}}, {{0, 
+                    0}, {-8.485281374238571, -8.485281374238571}}]], 
+                   ArrowBox[{{0, 0}, {12, 0}}]}},
+                 ImageSize->300,
+                 PlotRange->{{-25, 25}, {-25, 25}}], 7->
+                
+                GraphicsBox[{{
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{1, 0}, {0, 1}}, {0, 
+                    0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{-1, 0}, {0, -1}}, {
+                    0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{0.7071067811865475, 
+                    0.7071067811865475}, {-0.7071067811865475, 
+                    0.7071067811865475}}, {0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, \
+{{{-0.7071067811865475, -0.7071067811865475}, {
+                    0.7071067811865475, -0.7071067811865475}}, {0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{0, 1}, {-1, 0}}, {0,
+                     0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{0, -1}, {1, 0}}, {0, 
+                    0}}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], 
+                   ArrowBox[{{0, 0}, {0, 12}}], ArrowBox[{{0, 0}, {0, -12}}], 
+                   ArrowBox[
+                    NCache[{{0, 0}, {
+                    6 2^Rational[1, 2], 6 2^Rational[1, 2]}}, {{0, 0}, {
+                    8.485281374238571, 8.485281374238571}}]], 
+                   ArrowBox[
+                    NCache[{{0, 
+                    0}, {(-6) 2^Rational[1, 2], (-6) 2^Rational[1, 2]}}, {{0, 
+                    0}, {-8.485281374238571, -8.485281374238571}}]], 
+                   ArrowBox[{{0, 0}, {12, 0}}], ArrowBox[{{0, 0}, {-12, 0}}]}},
+                 ImageSize->300,
+                 PlotRange->{{-25, 25}, {-25, 25}}], 8->
+                
+                GraphicsBox[{{
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{1, 0}, {0, 1}}, {0, 
+                    0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{-1, 0}, {0, -1}}, {
+                    0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{0.7071067811865475, 
+                    0.7071067811865475}, {-0.7071067811865475, 
+                    0.7071067811865475}}, {0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, \
+{{{-0.7071067811865475, -0.7071067811865475}, {
+                    0.7071067811865475, -0.7071067811865475}}, {0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{0, 1}, {-1, 0}}, {0,
+                     0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{0, -1}, {1, 0}}, {0, 
+                    0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{-0.7071067811865475, 
+                    0.7071067811865475}, {-0.7071067811865475, \
+-0.7071067811865475}}, {0, 0}}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], 
+                   ArrowBox[{{0, 0}, {0, 12}}], ArrowBox[{{0, 0}, {0, -12}}], 
+                   ArrowBox[
+                    NCache[{{0, 0}, {
+                    6 2^Rational[1, 2], 6 2^Rational[1, 2]}}, {{0, 0}, {
+                    8.485281374238571, 8.485281374238571}}]], 
+                   ArrowBox[
+                    NCache[{{0, 
+                    0}, {(-6) 2^Rational[1, 2], (-6) 2^Rational[1, 2]}}, {{0, 
+                    0}, {-8.485281374238571, -8.485281374238571}}]], 
+                   ArrowBox[{{0, 0}, {12, 0}}], ArrowBox[{{0, 0}, {-12, 0}}], 
+                   ArrowBox[
+                    NCache[{{0, 0}, {
+                    6 2^Rational[1, 2], (-6) 2^Rational[1, 2]}}, {{0, 0}, {
+                    8.485281374238571, -8.485281374238571}}]]}},
+                 ImageSize->300,
+                 PlotRange->{{-25, 25}, {-25, 25}}], 9->
+                
+                GraphicsBox[{{
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{1, 0}, {0, 1}}, {0, 
+                    0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{-1, 0}, {0, -1}}, {
+                    0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{0.7071067811865475, 
+                    0.7071067811865475}, {-0.7071067811865475, 
+                    0.7071067811865475}}, {0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, \
+{{{-0.7071067811865475, -0.7071067811865475}, {
+                    0.7071067811865475, -0.7071067811865475}}, {0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{0, 1}, {-1, 0}}, {0,
+                     0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{0, -1}, {1, 0}}, {0, 
+                    0}}], GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {-0.5, 15}], 
+                    RectangleBox[{0.5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {-0.5, 18}], 
+                    RectangleBox[{0.5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {5, 21}]}, {{{-0.7071067811865475, 
+                    0.7071067811865475}, {-0.7071067811865475, \
+-0.7071067811865475}}, {0, 0}}], 
+                   GeometricTransformationBox[{
+                    RectangleBox[{-5, 13}, {5, 15}], 
+                    RectangleBox[{-5, 16}, {5, 18}], 
+                    RectangleBox[{-5, 19}, {-0.5, 21}], 
+                    RectangleBox[{0.5, 19}, {5, 21}]}, {{{
+                    0.7071067811865475, -0.7071067811865475}, {
+                    0.7071067811865475, 0.7071067811865475}}, {0, 0}}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], 
+                   ArrowBox[{{0, 0}, {0, 12}}], ArrowBox[{{0, 0}, {0, -12}}], 
+                   ArrowBox[
+                    NCache[{{0, 0}, {
+                    6 2^Rational[1, 2], 6 2^Rational[1, 2]}}, {{0, 0}, {
+                    8.485281374238571, 8.485281374238571}}]], 
+                   ArrowBox[
+                    NCache[{{0, 
+                    0}, {(-6) 2^Rational[1, 2], (-6) 2^Rational[1, 2]}}, {{0, 
+                    0}, {-8.485281374238571, -8.485281374238571}}]], 
+                   ArrowBox[{{0, 0}, {12, 0}}], ArrowBox[{{0, 0}, {-12, 0}}], 
+                   ArrowBox[
+                    NCache[{{0, 0}, {
+                    6 2^Rational[1, 2], (-6) 2^Rational[1, 2]}}, {{0, 0}, {
+                    8.485281374238571, -8.485281374238571}}]], 
+                   ArrowBox[
+                    NCache[{{0, 
+                    0}, {(-6) 2^Rational[1, 2], 6 2^Rational[1, 2]}}, {{0, 
+                    0}, {-8.485281374238571, 8.485281374238571}}]]}},
+                 ImageSize->300,
+                 PlotRange->{{-25, 25}, {-25, 25}}]}, 
+                Dynamic[$CellContext`i57$$],
+                Alignment->Automatic,
+                ImageSize->All,
+                TransitionDirection->Horizontal,
+                TransitionDuration->0.5,
+                TransitionEffect->Automatic],
+               Identity,
+               Editable->True,
+               Selectable->True],
+              ImageMargins->10],
+             Deployed->False,
+             StripOnInput->False,
+             ScriptLevel->0,
+             GraphicsBoxOptions->{PreserveImageOptions->True},
+             Graphics3DBoxOptions->{PreserveImageOptions->True}],
+            Identity,
+            Editable->False,
+            Selectable->False],
+           Alignment->{Left, Center},
+           Background->GrayLevel[1],
+           Frame->1,
+           FrameStyle->GrayLevel[0, 0.2],
+           ItemSize->Automatic,
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{
+         "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Top}}, 
+          "RowsIndexed" -> {}},
+        GridBoxDividers->{
+         "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+          "RowsIndexed" -> {}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.7], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.7]}, "ColumnsIndexed" -> {}, "Rows" -> {
+            Offset[0.4], {
+             Offset[0.8]}, 
+            Offset[0.4]}, "RowsIndexed" -> {}}], If[
+        CurrentValue["SelectionOver"], 
+        Manipulate`Dump`ReadControllerState[
+         Map[Manipulate`Dump`updateOneVar[#, 
+           CurrentValue["PreviousFormatTime"], 
+           CurrentValue["CurrentFormatTime"]]& , {
+           
+           Manipulate`Dump`controllerLink[{$CellContext`i57$$, \
+$CellContext`i57$425339$$}, "X1", 
+            If["DefaultAbsolute", True, "JB1"], False, {1, 9, 1}, 9, 1.]}], 
+         CurrentValue[{
+          "ControllerData", {
+           "Gamepad", "Joystick", "Multi-Axis Controller"}}], {}]],
+       ImageSizeCache->{333., {177.884033203125, 183.615966796875}}],
+      DefaultBaseStyle->{},
+      FrameMargins->{{5, 5}, {5, 5}}],
+     BaselinePosition->Automatic,
+     ImageMargins->0],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "ListAnimate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.672628228233757*^9, 3.67262836051213*^9, {3.6726284043344707`*^9, 
+   3.672628426290751*^9}, 3.6726285362047873`*^9, {3.672628724566698*^9, 
+   3.672628787025496*^9}, 3.672628837886964*^9, {3.672629036087763*^9, 
+   3.672629068846586*^9}, {3.672629159087973*^9, 3.6726291781107483`*^9}, {
+   3.672629232228717*^9, 3.6726293005765343`*^9}, 3.672629612280216*^9, {
+   3.6726296423279877`*^9, 3.6726296934549828`*^9}, 3.672629757392672*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"star", "[", "r_", "]"}], ":=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{"Thick", ",", 
+     RowBox[{"Line", "[", 
+      RowBox[{"r", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], ",", 
+         RowBox[{"-", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "1"}], "}"}]}], ",", 
+         RowBox[{"1", "/", 
+          RowBox[{"{", 
+           RowBox[{
+            SqrtBox["2"], ",", 
+            SqrtBox["2"]}], "}"}]}], ",", 
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          RowBox[{"{", 
+           RowBox[{
+            SqrtBox["2"], ",", 
+            SqrtBox["2"]}], "}"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}], ",", 
+         RowBox[{"-", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "0"}], "}"}]}], ",", 
+         RowBox[{"1", "/", 
+          RowBox[{"{", 
+           RowBox[{
+            SqrtBox["2"], ",", 
+            RowBox[{"-", 
+             SqrtBox["2"]}]}], "}"}]}], ",", 
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          RowBox[{"{", 
+           RowBox[{
+            SqrtBox["2"], ",", 
+            RowBox[{"-", 
+             SqrtBox["2"]}]}], "}"}]}], ",", 
+         RowBox[{"-", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "1"}], "}"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], ",", 
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          RowBox[{"{", 
+           RowBox[{
+            SqrtBox["2"], ",", 
+            SqrtBox["2"]}], "}"}]}], ",", 
+         RowBox[{"1", "/", 
+          RowBox[{"{", 
+           RowBox[{
+            SqrtBox["2"], ",", 
+            SqrtBox["2"]}], "}"}]}], ",", 
+         RowBox[{"-", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "0"}], "}"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}], ",", 
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          RowBox[{"{", 
+           RowBox[{
+            SqrtBox["2"], ",", 
+            RowBox[{"-", 
+             SqrtBox["2"]}]}], "}"}]}], ",", 
+         RowBox[{"1", "/", 
+          RowBox[{"{", 
+           RowBox[{
+            SqrtBox["2"], ",", 
+            RowBox[{"-", 
+             SqrtBox["2"]}]}], "}"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}], "}"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.672627099125496*^9, 3.6726273802781677`*^9}, {
+  3.67262742631291*^9, 3.672627526852173*^9}, {3.672627647464736*^9, 
+  3.6726276483737383`*^9}, {3.6726277629622087`*^9, 3.672627775642288*^9}, {
+  3.672627859691676*^9, 3.6726278877790194`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"exp", "[", 
+  RowBox[{"\"\<resource/csEntry.gif\>\"", ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Magnify", "[", "#", "]"}], "&"}], "/@", 
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{"Prepend", "[", 
+       RowBox[{
+        RowBox[{"Reverse", "[", "series", "]"}], ",", 
+        RowBox[{"series", "[", 
+         RowBox[{"[", "9", "]"}], "]"}]}], "]"}], ",", 
+      RowBox[{"Append", "[", 
+       RowBox[{"series", ",", 
+        RowBox[{"series", "[", 
+         RowBox[{"[", "9", "]"}], "]"}]}], "]"}]}], "]"}]}], ",", 
+   RowBox[{"1.2", "/", "5"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6726293191893063`*^9, 3.672629403983531*^9}, {
+   3.672629707265532*^9, 3.672629722848167*^9}, {3.672629772741084*^9, 
+   3.672629824518362*^9}, {3.672630057187319*^9, 3.6726301967627993`*^9}, {
+   3.672630304788756*^9, 3.672630306842314*^9}, {3.672630562272401*^9, 
+   3.672630565631805*^9}, {3.672630622057768*^9, 3.672630626264001*^9}, 
+   3.6726307577249527`*^9, {3.672630843553149*^9, 3.672630843646802*^9}, {
+   3.6726309008511753`*^9, 3.6726309011997433`*^9}}],
+
+Cell[BoxData["\<\"/Users/b2l/GitHub/borntoleave.github.io/resource/csEntry.\
+gif\"\>"], "Output",
+ CellChangeTimes->{{3.672629367278554*^9, 3.672629375505587*^9}, 
+   3.672629406149501*^9, 3.672629630709465*^9, {3.6726297158805847`*^9, 
+   3.672629725748723*^9}, 3.67262976499282*^9, {3.672629801827139*^9, 
+   3.6726298276015587`*^9}, {3.672630175699918*^9, 3.6726301982913313`*^9}, 
+   3.672630274840262*^9, 3.672630310202042*^9, 3.67263056876938*^9, 
+   3.6726306399565077`*^9, 3.672630761180356*^9, 3.6726308467909718`*^9, 
+   3.6726309083282537`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"s", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"rs", "[", 
+      RowBox[{"\"\<ani/untitled.000\>\"", "<>", 
+       RowBox[{"StringPadLeft", "[", 
+        RowBox[{
+         RowBox[{"ToString", "[", "#", "]"}], ",", "2", ",", "\"\<0\>\""}], 
+        "]"}], "<>", "\"\<.ppm\>\""}], "]"}], "&"}], "/@", 
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"3", ",", "3"}], "}"}], ",", 
+      RowBox[{"Range", "[", 
+       RowBox[{"3", ",", "22"}], "]"}]}], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"exp", "[", 
+  RowBox[{"\"\<resource/phyEntry.gif\>\"", ",", 
+   RowBox[{"Join", "[", 
+    RowBox[{"s", ",", 
+     RowBox[{"Reverse", "@", "s"}]}], "]"}], ",", 
+   RowBox[{"1.2", "/", "11"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.672614938017538*^9, 3.6726149666025953`*^9}, 
+   3.67261626154403*^9, {3.6726163546022778`*^9, 3.672616369219777*^9}, {
+   3.6726165304508038`*^9, 3.6726165887308483`*^9}, {3.672616726651868*^9, 
+   3.672616727728594*^9}, {3.672616788814035*^9, 3.672616837845018*^9}, {
+   3.672616868216113*^9, 3.672616895943088*^9}, {3.672616980974234*^9, 
+   3.6726169998914213`*^9}, {3.672617047406839*^9, 3.6726170800392113`*^9}, {
+   3.6726185649348173`*^9, 3.6726185962609386`*^9}, {3.672630373092475*^9, 
+   3.672630377939993*^9}, {3.672630536750367*^9, 3.672630556663404*^9}, {
+   3.672630839241125*^9, 3.672630839462727*^9}, {3.672630903688231*^9, 
+   3.672630903887982*^9}}],
+
+Cell[BoxData["\<\"/Users/b2l/GitHub/borntoleave.github.io/resource/phyEntry.\
+gif\"\>"], "Output",
+ CellChangeTimes->{
+  3.6726168447379427`*^9, {3.6726168749703217`*^9, 3.672616902305813*^9}, 
+   3.672617009422073*^9, {3.672617060934641*^9, 3.67261708898969*^9}, 
+   3.672618574409502*^9, 3.672618604931823*^9, 3.6726303854270773`*^9, {
+   3.672630551194278*^9, 3.672630575920745*^9}, 3.672630854098775*^9, 
+   3.672630915576952*^9}]
 }, Open  ]]
 },
 WindowSize->{808, 655},
-WindowMargins->{{Automatic, 89}, {-4, Automatic}},
+WindowMargins->{{-25, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 6, \
 2015)",
 StyleDefinitions->"Default.nb"
@@ -124,9 +1134,31 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 3291, 107, 114, "Input"],
 Cell[CellGroupData[{
-Cell[580, 22, 1910, 58, 97, "Input"],
-Cell[2493, 82, 1385, 24, 447, 337, 6, "CachedBoxData", "BoxData", "Output"]
+Cell[3874, 131, 1465, 41, 63, "Input"],
+Cell[5342, 174, 2424, 39, 374, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7803, 218, 671, 20, 28, "Input"],
+Cell[8477, 240, 1206, 35, 76, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9720, 280, 150, 3, 28, "Input"],
+Cell[9873, 285, 94, 1, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10004, 291, 5664, 179, 273, "Input"],
+Cell[15671, 472, 23995, 472, 391, "Output"]
+}, Open  ]],
+Cell[39681, 947, 2676, 84, 171, "Input"],
+Cell[CellGroupData[{
+Cell[42382, 1035, 1092, 24, 63, "Input"],
+Cell[43477, 1061, 555, 8, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44069, 1074, 1469, 33, 63, "Input"],
+Cell[45541, 1109, 434, 7, 28, "Output"]
 }, Open  ]]
 }
 ]
